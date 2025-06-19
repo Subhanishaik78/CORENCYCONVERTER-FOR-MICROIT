@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" id="search-input">
+            <button id="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="weather-info hidden">
+            <div class="location">
+                <h2 class="city">New York, US</h2>
+                <div class="date">Monday, May 30</div>
+            </div>
+            <div class="weather-details">
+                <div class="temp">20°C</div>
+                <div class="weather">Sunny</div>
+                <div class="hi-low">16°C / 22°C</div>
+            </div>
+            <div class="extra-info">
+                <div class="humidity">
+                    <i class="fas fa-tint"></i>
+                    <span>Humidity: 60%</span>
+                </div>
+                <div class="wind">
+                    <i class="fas fa-wind"></i>
+                    <span>Wind: 5 km/h</span>
+                </div>
+            </div>
+            <div class="forecast">
+                <h3>3-Day Forecast</h3>
+                <div class="forecast-container"></div>
+            </div>
+        </div>
+        <div class="error hidden">
+            <p>City not found. Please try again.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
